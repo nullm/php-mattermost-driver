@@ -31,6 +31,7 @@ use Gnello\Mattermost\Models\ReactionModel;
 use Gnello\Mattermost\Models\RoleModel;
 use Gnello\Mattermost\Models\SAMLModel;
 use Gnello\Mattermost\Models\SchemeModel;
+use Gnello\Mattermost\Models\SiteModel;
 use Gnello\Mattermost\Models\SystemModel;
 use Gnello\Mattermost\Models\TeamModel;
 use Gnello\Mattermost\Models\UserModel;
@@ -336,5 +337,13 @@ class Driver
     public function getBotModel()
     {
         return $this->getModel(BotModel::class);
+    }
+
+    /**
+     * @return SiteModel
+     */
+    public function getSiteModel()
+    {
+        return $this->getModel(SiteModel::class);
     }
 }
