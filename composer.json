@@ -1,5 +1,5 @@
 {
-    "name": "gnello/php-mattermost-driver",
+    "name": "nullm/php-mattermost-driver",
     "description": "The Php Driver to interact with the Mattermost Web Service API",
     "keywords": ["mattermost", "chat"],
     "homepage": "https://github.com/gnello/php-mattermost-driver",
