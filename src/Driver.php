@@ -21,6 +21,7 @@ use Gnello\Mattermost\Models\DataRetentionModel;
 use Gnello\Mattermost\Models\ElasticsearchModel;
 use Gnello\Mattermost\Models\EmojiModel;
 use Gnello\Mattermost\Models\FileModel;
+use Gnello\Mattermost\Models\IntegrationActionModel;
 use Gnello\Mattermost\Models\JobModel;
 use Gnello\Mattermost\Models\LDAPModel;
 use Gnello\Mattermost\Models\OAuthModel;
@@ -345,5 +346,13 @@ class Driver
     public function getSiteModel()
     {
         return $this->getModel(SiteModel::class);
+    }
+
+    /**
+     * @return IntegrationActionModel
+     */
+    public function getIntegrationActionModel()
+    {
+        return $this->getModel(IntegrationActionModel::class);
     }
 }
